@@ -1,14 +1,23 @@
-$('.op-menu-icons').click(function(event) {
-  event.preventDefault();
-  event.stopPropagation();
-  $(".op-navlist").slideToggle(200);
+$('#op-menu-open').click(function(event) {
+  $("#op-menu-open").hide();
+  $("#op-menu-close").show();
+
+  $('#op-main-menu').slideDown();
   return false;
 });
 
-$('#show-menu-1').click(function(event) {
+$('#op-menu-close').click(function(event) {
+  $('#op-menu-close').hide();
+  $("#op-menu-open").show();
+
+  $('#op-main-menu').slideUp();
+  return false;
+});
+
+$('.op-menu-trigger').click(function(event) {
   event.preventDefault();
   event.stopPropagation();
-  $("#submenu-1").slideToggle(200);
+  $(this).children('.op-submenu').slideToggle();
+  
   return false;
-
 });

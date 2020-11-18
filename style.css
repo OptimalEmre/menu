@@ -83,7 +83,7 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
-.op-main-menu {
+#op-main-menu {
     display: flex;
     top: 0;
     left: 0;
@@ -91,7 +91,7 @@ header {
 
 }
 
-.op-main-menu a {
+#op-main-menu a {
     display: flex;
     color: var(--op-menu-text-color);
     padding: 1rem;
@@ -121,18 +121,26 @@ header {
 
 
 @media screen and (max-width: 850px) {
-    .op-main-menu {
+    #op-main-menu {
         width: 100vw;
         flex-direction: column;
         overflow-y: scroll;
 
         border: 3px solid transparent;
         border-left-color: var(--submenu-border-color);
+
+        display: none;
     }
 
     .op-submenu {
         margin-left: 0.3rem;
         border-left-color: var(--submenu-border-color);
+        display: none;
+        transition: all var(--op-menu-transition-speed);
+        -webkit-transition: all var(--op-menu-transition-speed);
+        -moz-transition: all var(--op-menu-transition-speed);
+        -ms-transition: all var(--op-menu-transition-speed);
+        -o-transition: all var(--op-menu-transition-speed);
 
     }
 

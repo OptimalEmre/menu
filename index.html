@@ -26,25 +26,37 @@
             </div>
 
             <nav class="op-menu-navbar">
-                <ul class="op-main-menu">
+                <ul id="op-main-menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Products<ion-icon name="caret-down-outline"></ion-icon></a></li>
-                    <ul class="op-submenu">
-                        <li><a href="#">First Product</a></li>
-                        <li><a href="#">Second Product</a>
-                            <ul class="op-submenu">
-                                <li><a href="#">First Variant of Two</a></li>
-                                <li><a href="#">Second Variant of Two</a></li>
-                                <li><a href="#">Third Variant of Two</a></li>
-                                <li><a href="#">Fourth Variant of Two</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Third Product</a></li>
-                        <li><a href="#">Fourth Product</a></li>
-                    </ul>
+                    <li class="op-menu-trigger"><a href="#">Products<ion-icon name="caret-down-outline"></ion-icon></a>
+
+                        <ul class="op-submenu">
+                            <li><a href="#">First Product</a></li>
+                            <li class="op-menu-trigger"><a href="#">Second Product<ion-icon
+                                        name="caret-forward-outline">
+                                    </ion-icon></a>
+                                <ul class="op-submenu">
+                                    <li><a href="#">First Variant of Two</a></li>
+                                    <li><a href="#">Second Variant of Two</a></li>
+                                    <li class="op-menu-trigger"><a href="#">Third Variant of Two<ion-icon
+                                                name="caret-forward-outline"></ion-icon>
+                                        </a>
+                                        <ul class="op-submenu">
+                                            <li><a href="#">First sub sub menu elem</a></li>
+                                            <li><a href="#">Second sub sub menu elem</a></li>
+                                            <li><a href="#">Third sub sub menu elem</a></li>
+                                            <li><a href="#">Fourth sub sub menu elem</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Fourth Variant of Two</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Third Product</a></li>
+                            <li class="op-menu-trigger"><a href="#">Fourth Product</a></li>
+                        </ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Policies</a>
+                    <li><a href="#">Policies<ion-icon name="caret-forward-outline"></ion-icon></a>
                         <ul class="op-submenu">
                             <li><a href="#">Temrs</a></li>
                             <li><a href="#">Privacy Policy</a></li>
