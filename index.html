@@ -18,27 +18,27 @@
     <header>
         <div class="op-nav-container">
             <div class="op-company-logo">
-                <a href="#"><img class="logo" src="optimal_logo.svg" alt="Optimal Web App Solutions"></a>
+                <a href="#"><img class="op-logo-image" src="optimal_logo.svg" alt="Optimal Web App Solutions"></a>
             </div>
             <div class="op-menu-button">
                 <ion-icon id="op-menu-open" name="menu-outline"></ion-icon>
                 <ion-icon id="op-menu-close" name="close-outline"></ion-icon>
             </div>
 
-            <nav class="op-menu-navbar">
+            <div class="op-menu-navbar">
                 <ul id="op-main-menu">
                     <li><a href="#">Home</a></li>
-                    <li class="op-menu-trigger"><a href="#">Products<ion-icon name="caret-down-outline"></ion-icon></a>
+                    <li><a class="op-menu-trigger" href="#">Products<ion-icon name="caret-down-outline"></ion-icon></a>
 
                         <ul class="op-submenu">
                             <li><a href="#">First Product</a></li>
-                            <li class="op-menu-trigger"><a href="#">Second Product<ion-icon
+                            <li><a class="op-menu-trigger" href="#">Second Product<ion-icon
                                         name="caret-forward-outline">
                                     </ion-icon></a>
                                 <ul class="op-submenu">
                                     <li><a href="#">First Variant of Two</a></li>
                                     <li><a href="#">Second Variant of Two</a></li>
-                                    <li class="op-menu-trigger"><a href="#">Third Variant of Two<ion-icon
+                                    <li><a class="op-menu-trigger" href="#">Third Variant of Two<ion-icon
                                                 name="caret-forward-outline"></ion-icon>
                                         </a>
                                         <ul class="op-submenu">
@@ -52,19 +52,29 @@
                                 </ul>
                             </li>
                             <li><a href="#">Third Product</a></li>
-                            <li class="op-menu-trigger"><a href="#">Fourth Product</a></li>
+                            <li><a href="#">Fourth Product</a></li>
                         </ul>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Policies<ion-icon name="caret-forward-outline"></ion-icon></a>
+                    <li><a class="op-menu-trigger" href="#">Policies<ion-icon name="caret-forward-outline"></ion-icon>
+                        </a>
                         <ul class="op-submenu">
-                            <li><a href="#">Temrs</a></li>
+                            <li><a href="#">Terms</a></li>
                             <li><a href="#">Privacy Policy</a></li>
                         </ul>
                     </li>
 
                 </ul>
-            </nav>
+                <div id="op-searchbox">
+                    <form id="op-search-form">
+                        <input id="op-search-input" type="text" value="Search..">
+
+                        <button id="op-search-button" type="submit">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
     </header>
     <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js">
